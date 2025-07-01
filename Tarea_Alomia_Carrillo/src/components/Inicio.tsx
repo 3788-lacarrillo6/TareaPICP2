@@ -21,6 +21,7 @@ const Inicio = () => (
       Esta es tu aplicación de álgebra lineal, diseñada para ayudarte a
       dominar conceptos y resolver problemas con facilidad.
     </p>
+    <div className="p-4"><strong>Integrantes:</strong> Alomia Johan, Carrillo Luis</div>;
    
   </main>
 );
