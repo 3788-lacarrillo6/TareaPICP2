@@ -1,4 +1,3 @@
-// src/components/Inventario/FichaProducto.tsx
 import React from "react";
 import "./Inventario.css";
 
@@ -27,14 +26,14 @@ const FichaProducto: React.FC<FichaProductoProps> = ({ productos, onActualizar, 
         </tr>
       </thead>
       <tbody>
-        {productos.map((producto) => (
+        
+        {//se recorre el arreglo de productos
+        productos.map((producto) => (
           <tr key={producto.id}>
             <td>{producto.nombre}</td>
-            <td>{producto.precio.toFixed(2)}</td>
+            <td>{producto.precio.toFixed(2)}</td>{/*cuántos decimales deseas*/}
             <td>{producto.cantidad}</td>
             <td>
-              <button onClick={() => onActualizar(producto.id, producto.cantidad + 1)}>➕</button>
-              <button onClick={() => onActualizar(producto.id, producto.cantidad - 1)}>➖</button>
               <button onClick={() => onEliminar(producto.id)} className="eliminar">🗑️</button>
             </td>
           </tr>
