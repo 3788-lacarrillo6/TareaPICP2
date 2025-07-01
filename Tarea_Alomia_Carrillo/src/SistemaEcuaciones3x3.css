@@ -1,0 +1,54 @@
+.sistema-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.sistema-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.grid-ecuacion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-ecuacion input {
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.boton-resolver {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-resolver:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.resultado {
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
