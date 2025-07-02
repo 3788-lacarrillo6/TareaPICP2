@@ -19,7 +19,7 @@ const Inventario: React.FC = () => {
 
   const agregarProducto = () => {
     if (!nombre || cantidad <= 0 || precio <= 0) {
-      setMensaje("❌ Ingrese datos válidos para el nuevo producto.");
+      setMensaje("Ingrese datos válidos para el nuevo producto.");
       return;
     }
 
@@ -34,7 +34,7 @@ const Inventario: React.FC = () => {
     setNombre("");
     setCantidad(0);
     setPrecio(0);
-    setMensaje("✅ Producto agregado correctamente.");
+    setMensaje("Producto agregado correctamente.");
   };
 
   const actualizarCantidad = (id: number, nuevaCantidad: number) => {
