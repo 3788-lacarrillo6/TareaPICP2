@@ -49,14 +49,14 @@ const CalculadoraEstadistica: React.FC = () => {
 
     // Verifica si alguno no es un número
     if (datos.some(isNaN)) {
-      setErrores("❌ Ingrese solo valores numéricos válidos.");
+      setErrores("Ingrese solo valores numéricos válidos.");
       setResultados({});
       return;
     }
 
     // Verifica que haya al menos dos valores
     if (datos.length < 2) {
-      setErrores("❌ Ingrese al menos dos valores numéricos.");
+      setErrores("Ingrese al menos dos valores numéricos.");
       setResultados({});
       return;
     }
@@ -66,7 +66,7 @@ const CalculadoraEstadistica: React.FC = () => {
 
     // Si no hay moda, muestra advertencia pero continúa
     if (moda === null) {
-      setErrores("⚠️ No hay una moda clara: todos los valores son únicos.");
+      setErrores("No hay una moda clara: todos los valores son únicos.");
     }
 
     // Guarda todos los resultados estadísticos en el estado
