@@ -18,7 +18,7 @@ const Inicio = () => (
       ¡Bienvenido!
     </h1>
     <p style={{ fontSize: "1.25rem", marginBottom: "2rem", lineHeight: "1.6" }}>
-      Esta es tu aplicación de álgebra lineal, diseñada para ayudarte a
+      Esta es tu aplicación de algebra lineal, diseñada para ayudarte a
       dominar conceptos y resolver problemas con facilidad.
     </p>
     <div className="p-4"><strong>Integrantes:</strong> Alomia Johan, Carrillo Luis</div>;
