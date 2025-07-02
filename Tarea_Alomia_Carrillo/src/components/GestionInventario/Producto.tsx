@@ -24,7 +24,7 @@ const Producto: React.FC<ProductoProps> = ({
       <p>Cantidad: {cantidad}</p>
       <button onClick={() => onActualizar(id, cantidad + 1)}>➕</button>
       <button onClick={() => onActualizar(id, cantidad - 1)}>➖</button>
-      <button onClick={() => onEliminar(id)}>🗑️ Eliminar</button>
+      <button onClick={() => onEliminar(id)}>Eliminar</button>
     </div>
   );
 };
